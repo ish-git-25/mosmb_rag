@@ -1,0 +1,8 @@
+transformers
+accelerate
+bitsandbytes
+sentence-transformers
+rank-bm25
+chromadb
+fastapi
+uvicorn
