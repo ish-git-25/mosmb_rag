@@ -18,30 +18,34 @@ Additional capabilities:
 ---
 
 ## Project Structure
+
+```
 mosmb_rag/
 │
 ├── app/
-│ ├── init.py
-│ ├── main.py # FastAPI entry point
-│ ├── rag_pipeline.py # Core pipeline logic
-│ ├── retrieval.py # Vector + BM25 + hybrid retrieval
-│ ├── error_handler.py # Error detection & resolution
-│ ├── log_handler.py # Log parsing + reasoning
-│ ├── memory.py # Conversation memory (sliding window)
-│ ├── prompts.py # Prompt templates
-│ ├── model.py # LLM + embeddings loading
-│ ├── database.py # ChromaDB + BM25 setup
-│ ├── utils.py # Cleaning, formatting utilities
+│   ├── __init__.py
+│   ├── main.py              # FastAPI entry point
+│   ├── rag_pipeline.py      # Core pipeline logic
+│   ├── retrieval.py         # Hybrid retrieval
+│   ├── error_handler.py     # Error handling
+│   ├── log_handler.py       # Log analysis
+│   ├── memory.py            # Sliding window memory
+│   ├── prompts.py           # Prompt templates
+│   ├── model.py             # LLM + embeddings
+│   ├── database.py          # ChromaDB + BM25
+│   ├── utils.py             # Cleaning utilities
 │
 ├── data/
-│ ├── mosmb_final_chunks.json # Processed documentation chunks
-│ ├── chroma_db/ # Persistent vector database
+│   ├── mosmb_final_chunks.json
+│   ├── chroma_db/
 │
-├── test.py # Testing script for pipeline
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-├── .env # Environment variables (HF_TOKEN)
-├── .gitignore # Ignore secrets and cache
+├── test.py
+├── requirements.txt
+├── README.md
+├── .env
+├── .gitignore
+```
+
 
 ## Setup Instructions
 
